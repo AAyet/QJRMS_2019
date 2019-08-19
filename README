@@ -1,0 +1,33 @@
+###################################################
+
+SET OF FILES COMPUTING THE WIND IN THE MABL
+AS A RESPONSE TO AN SST FRONT, FROM THE ANALYTICAL 
+SOLUTION PRESENTED IN 
+
+A. Ayet and J.L. Redelsperger, QJRMS, 2019
+DOI:  https://doi.org/10.1002/qj.3578
+
+(c) A. Ayet, original version of 06/2019
+
+All the programs have been tested Python 2.7.12  with Anaconda 4.2.0 (64-bit).
+
+###################################################
+The main folder contains two notebooks 
+- 'Figures_notebook' generates the figures of the paper
+- '15_notebook' is the equivelent but for the 15 m/s case, not shown in the paper
+
+The /bin folder contains: 
+
+. Anaytical_CTW.py: CTW for "Cold to Warm", is the main file computing the wind in the MABL.
+    - this file produces two outputs, saved in /data: wind####.py and N###.pu, which are both used for plots in the notebook
+
+. var_##.py: definition of physical parameters for the analytical model. 
+       - var15: contains the 
+		parameters used to reproduce the numerical experiment of "Killpatrick et al., J.Climate", with a wind of 15 m/s
+       - var5: to reproduce the numerical experiment of Ayet & Redelsperger, 5 m/s
+
+The /data folder contains:
+
+. Outputs of Analytical_CTW.py for two different winds
+
+. Outputs of the numerical simulation with Meso-NH ('EXPER.15' and 'EXPER.5' for the 15 and 5 m/s case respecrively)
