@@ -30,4 +30,4 @@ The /data folder contains:
 
 . Outputs of Analytical_CTW.py for two different winds
 
-. Outputs of the numerical simulation with Meso-NH ('EXPER.15' and 'EXPER.5' for the 15 and 5 m/s case respecrively)
+. Outputs of the numerical simulation with Meso-NH ('EXPER.15' and 'EXPER.5' for the 15 and 5 m/s case respectively)
